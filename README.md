@@ -17,8 +17,9 @@ These directories contain the gene expression data -- which are the output of sp
 - /pasteur/helix/projects/CSD_hpc/Naomie/visiumHD/visiumHD_outputs/embryo_head/counts/Sample_{A1/D1}/outs/binned_outputs/square_{binning}um/
 
 Vincent Laville ran spaceranger count for the EOM samples (10 wpc).
-Naomie ran spaceranger count for the embryo head section (8 wpc), after manual alignment on Loupe Browser. Although there is also one gene expression data corresponding to the embryo head in CSD_hpc/data/lab/spatial it is not recommended using it, because it won't match with the high resolution image used for segmentation. Naomie generated this high resolution image (on Fiji), and manually aligned the fiducials on Loupe Browser.
-Therefore, use the gene expression data in path defined just above.
+Naomie ran spaceranger count for the embryo head section (8 wpc).
+These are in two different directories because there was no high resolution image available for the embryo head, so I generated it following the steps described in PDF Files/Fiji.pdf, + I had to perform manual alignment on Loupe Browser so I needed to re-run spaceranger count to match with those images.
+Therefore, use the gene expression data in paths defined just above.
 
 Note that the method to generate the high resolution images used in segmentation notebook is defined in PDF Files/Fiji.pdf
 
