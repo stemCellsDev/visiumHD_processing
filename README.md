@@ -53,9 +53,11 @@ A pseudotime analysis was also conducted with a second visium HD sample owing to
 
 **We worked with embryo head sample to study craniofacial muscles, but this pipeline can be adapted to any sample and organism.**
 
-## Guidelines to work with this repository
+## Step-by-step Guidelines to work with this repository 
 
+- Start with spaceranger count whose shell script is in src/. Check in the /outs/web_summary.html that the fiducials are properly aligned. If not, manually align the CytAssist on Loupe Browser. Documentation: https://www.10xgenomics.com/support/software/space-ranger/4.0/analysis/running-pipelines/count-visium-hd. Note that when I performed the analysis, with Space Ranger v3.0, no segmentation was included. Now in space ranger v4.0 a segmentation is included in the workflow.
 - Start with segmentation: run notebook /Notebooks/Segmentation/StarDist/nuclei_segmentation.ipynb
+  Note that in /Notebooks/Segmentation/Bin2cell is an exploration of bin2cell, but StarDist was used for this analysis and recommended.
 - Perform Pseudotime analysis, as explained in PDF Files/cellID_poster.pdf, by running the notebook: /Notebooks/Downstream_Analysis/Pseudotime/Pseudotime_notebook.ipynb
 - To focus on the 8 wpc section (whole head), and derive TFs and markers for each muscle : the analysis is done at 3 levels (as explained in file PDF Files/COMPLETE_EXPLANATIONS.pdf):
    - Perform the analysis at the single cell level: /Notebooks/Downstream_Analysis/Markers_Identification/single_cell_level/Markers_Identification_Single_Cell_Level.ipynb
