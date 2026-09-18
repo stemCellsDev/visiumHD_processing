@@ -5,9 +5,23 @@ Visium HD is a sequencing-based spatial transcriptomics technology that reaches 
 
 This repository encompasses pre-processing, segmentation and downstream analysis using scanpy.
 
-## Data
+## Data 
 
-Human embryo head section of 8 wpc. A second sample restricted to the EOM and corresponding to 10 wpc is used in pseudotime analysis.
+- Human embryo head section of 8 wpc.
+- A second sample restricted to the EOM and corresponding to 10 wpc is used in pseudotime analysis.
+
+### Data Location
+
+These directories contain the gene expression data -- which are the output of spaceranger count (Section Step-by-step Guidelines below) -- as:
+- /pasteur/helix/projects/CSD_hpc/data/lab/spatial/EOM_VisiumHD/counts/Sample_{A1/D1}/outs/binned_outputs/square_00{binning}um/
+- /pasteur/helix/projects/CSD_hpc/Naomie/visiumHD/visiumHD_outputs/embryo_head/counts/Sample_{A1/D1}/outs/binned_outputs/square_{binning}um/
+
+Vincent Laville ran spaceranger count for the EOM samples (10 wpc).
+Naomie ran spaceranger count for the embryo head section (8 wpc), after manual alignment on Loupe Browser. Although there is also one gene expression data corresponding to the embryo head in CSD_hpc/data/lab/spatial it is not recommended using it, because it won't match with the high resolution image used for segmentation. Naomie generated this high resolution image (on Fiji), and manually aligned the fiducials on Loupe Browser.
+Therefore, use the gene expression data in path defined just above.
+
+Data is called in /Notebooks/Segmentation/StarDist/nuclei_segmentation.ipynb, in sections Data Paths. Adapt according to which slide you analyze.
+At the end of nuclei_segmentation.ipynb it saves an Anndata object that will be loaded onto the notebooks in Downstream_Analysis/
 
 ## Structure of repository
 
