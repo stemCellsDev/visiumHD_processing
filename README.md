@@ -5,12 +5,16 @@ Visium HD is a sequencing-based spatial transcriptomics technology that reaches 
 
 This repository encompasses pre-processing, segmentation and downstream analysis using scanpy.
 
+## Data
+
+Human embryo head section of 8 wpc. A second sample restricted to the EOM and corresponding to 10 wpc is used in pseudotime analysis.
+
 ## Structure of repository
 
 Start by generating the feature-barcode matrix using codes of *src* folder. Follow by *segmentation*. Explore how some genes of interest express on the tissue using *Markers_visualization* notebook. And then *single_cell_level*, followed by *pseudobulk_level*, followed by *megabulk_level*.  
 Overall the pipeline encompasses: tissue segmentation, QC, anatomical clusters definition using known markers expression on tissue and Regions of Interest (defined using softwares like Fiji or QuPath), Transcription Factor enrichment analysis and differential expression analysis (across anatomical clusters) - both at single cell and pseudobulk levels - validation at megabulk level. 
 
-A pseudotime analysis was also conducted with a second visium HD sample owing to the same type of tissue but from a different developmental stage.
+A pseudotime analysis was also conducted with a second visium HD sample owing to the same type of tissue but from a different developmental stage: 10 wpc.
 
 ```plaintext
 ├── Notebooks/
