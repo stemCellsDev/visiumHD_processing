@@ -52,12 +52,16 @@ A pseudotime analysis was also conducted with a second visium HD sample owing to
 ## Guidelines to work with this repository
 
 - Start with segmentation: run notebook /Notebooks/Segmentation/StarDist/nuclei_segmentation.ipynb
-- Perform Pseudotime analysis, as explained in cellID_poster.pdf, by running the notebook: /Notebooks/Downstream_Analysis/Pseudotime/Pseudotime_notebook.ipynb
-- To focus on the 8 wpc section (whole head), and derive TFs and markers for each muscle : the analysis is done at 3 levels (as explained in file COMPLETE_EXPLANATIONS.pdf):
+- Perform Pseudotime analysis, as explained in PDF Files/cellID_poster.pdf, by running the notebook: /Notebooks/Downstream_Analysis/Pseudotime/Pseudotime_notebook.ipynb
+- To focus on the 8 wpc section (whole head), and derive TFs and markers for each muscle : the analysis is done at 3 levels (as explained in file PDF Files/COMPLETE_EXPLANATIONS.pdf):
    - Perform the analysis at the single cell level: /Notebooks/Downstream_Analysis/Markers_Identification/single_cell_level/Markers_Identification_Single_Cell_Level.ipynb
-   Note that this analysis is based on Differential Expression Analysis done by DESeq2 in /Notebooks/Downstream_Analysis/Markers_Identification/differential_expression_analysis/DEA_DESeq2.ipynb. I used a different notebook at it is R-based. The theory and design for the model fitting is also detailed in COMPLETE_EXPLANATIONS.pdf.
+   Note that this analysis is based on Differential Expression Analysis done by DESeq2 in /Notebooks/Downstream_Analysis/Markers_Identification/differential_expression_analysis/DEA_DESeq2.ipynb. I used a different notebook at it is R-based. The theory and design for the model fitting is also detailed in PDF Files/COMPLETE_EXPLANATIONS.pdf.
    - Perform the analysis at the pseudobulk level: /Notebooks/Downstream_Analysis/Markers_Identification/pseudobulk_level/Markers_Identification_Pseudobulk.ipynb 
    - Visualize results of single cell and pseudobulk analysis at the megabulk level (grouping cells owing to a same muscle): /Notebooks/Downstream_Analysis/Markers_Identification/megabulk_level/markers_on_megabulks.ipynb   
+
+## Results Section
+
+All analysis reports can be found in folder Results/. The file names talk for themselves and are extensively detailed in PDF Files/COMPLETE EXPLANATIONS.pdf
 
 ## Contact
 
