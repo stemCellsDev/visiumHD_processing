@@ -17,6 +17,10 @@ Overall the pipeline encompasses: tissue segmentation, QC, anatomical clusters d
 A pseudotime analysis was also conducted with a second visium HD sample owing to the same type of tissue but from a different developmental stage: 10 wpc.
 
 ```plaintext
+├── Results/
+|   *html reports of the analysis notebooks*
+├── PDF Files/
+|   *files detailing the workflow*
 ├── Notebooks/
 │   ├── Benchmarking/
 |        *Comparison of visium HD and scRNA-seq sensitivity.*
